@@ -2,10 +2,6 @@ version: "3"
 services:
   app:
     build: .
-    volumes:
-      - ./usr/bin/EmptyEpsilon:/usr/bin/EmptyEpsilon
-      - ./usr/share/emptyepsilon:/usr/share/emptyepsilon
-      - ./options.ini:/root/.emptyepsilon/options.ini
-      - ./run.sh:/usr/app/run.sh
     ports:
       - "8080:8080"
+      - "35666:35666"

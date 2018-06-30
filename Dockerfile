@@ -9,4 +9,8 @@ COPY ./usr/share/emptyepsilon /usr/share/emptyepsilon
 COPY ./options.ini /root/.emptyepsilon/options.ini
 COPY ./run.sh /usr/app/run.sh
 
+EXPOSE 35666/tcp
+EXPOSE 35666/udp
+EXPOSE 8080/tcp
+
 CMD ["/usr/app/run.sh"]
