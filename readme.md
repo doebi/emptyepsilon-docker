@@ -1,7 +1,7 @@
-##  EmptyEpsilon in Docker
+#  EmptyEpsilon in Docker
 This packages ee binaries into a ready-usable docker image.
 
-# How to run
+## How to run
 **run standalone**
 
 `docker run -d -p 35666:35666/udp -p 35666:35666 -p 8080:8080 doebi/emptyepsilon`
