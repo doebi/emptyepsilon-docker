@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 # install dependencies
-RUN apt update && apt install -y libsfml-system2.4 libsfml-window2.4 libsfml-graphics2.4 libsfml-network2.4 libsfml-audio2.4 xvfb
+RUN apt update && apt install -y libsfml-system2.4 libsfml-window2.4 libsfml-graphics2.4 libsfml-network2.4 libsfml-audio2.4 xvfb && rm -rf /var/lib/apt/lists/*
 
 # add game files 
 COPY ./usr/bin/EmptyEpsilon /usr/bin/EmptyEpsilon
